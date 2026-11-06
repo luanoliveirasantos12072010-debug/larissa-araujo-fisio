@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Larissa Araújo | Fisioterapeuta Domiciliar em Garanhuns - PE</title>
+<meta name="description" content="Larissa Araújo, fisioterapeuta em Garanhuns e região. Atendimento domiciliar humanizado: traumato-ortopedia, neurofuncional, geriatria, liberação miofascial e drenagem linfática. Agende pelo WhatsApp (87) 99963-6123.">
+<meta property="og:title" content="Larissa Araújo · Fisioterapeuta">
+<meta property="og:description" content="Fisioterapia domiciliar humanizada em Garanhuns e região.">
+<meta property="og:image" content="img/larissa.jpg">
+<meta name="theme-color" content="#f5ede1">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Physiotherapy","name":"Larissa Araújo Fisioterapeuta","telephone":"+55 87 99963-6123","email":"larissaraujosilva0@gmail.com","areaServed":"Garanhuns - PE e região","address":{"@type":"PostalAddress","addressLocality":"Garanhuns","addressRegion":"PE","addressCountry":"BR"},"paymentAccepted":"Pix"}
+</script>
+<style>
+/* Paleta da marca: creme, oliva, dourado. Sem preto. */
+:root{
+  --cream:#f5ede1; --cream2:#efe4d3; --paper:#fbf7f0; --sand:#e6d6bd;
+  --olive:#6b6c48; --olive2:#58593a; --olive3:#878862; --sage:#b9b99a;
+  --gold:#c9a25a; --gold2:#a9803a; --goldl:#e4c98f;
+  --ink:#4a4632; --mid:#7c765f; --line:rgba(74,70,50,.14);
+  --serif:"Cormorant Garamond",Georgia,serif; --f:"Jost",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.8,.2,1); --spring:cubic-bezier(.34,1.5,.64,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+html,body{margin:0}
+body{background:var(--cream);color:var(--ink);font-family:var(--f);font-weight:400;font-size:17px;line-height:1.7}
+body.loading{overflow:hidden}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+img{display:block;max-width:100%}
+[hidden]{display:none!important}
+::selection{background:var(--goldl)}
+.wrap{max-width:1220px;margin:0 auto;padding-left:max(22px,env(safe-area-inset-left));padding-right:max(22px,env(safe-area-inset-right))}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1;margin:0;color:var(--olive2);text-wrap:balance}
+h2{font-size:clamp(42px,5.6vw,76px);letter-spacing:-.01em}
+h3{font-size:30px;line-height:1.05}
+p{margin:0}
+em,.it{font-style:italic;color:var(--gold2);font-weight:400}
+.kick{display:inline-flex;align-items:center;gap:14px;font-size:12.5px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--olive)}
+.kick::before{content:"";width:34px;height:1px;background:var(--gold)}
+.pad{padding-block:clamp(90px,11vw,150px)}
+
+/* ===== Abertura 0–100: o monograma se enche de dourado ===== */
+.loader{position:fixed;inset:0;z-index:500;display:grid;place-items:center;background:var(--cream);transition:clip-path 1.1s var(--ease)}
+.loader.go{clip-path:inset(0 0 100% 0)}
+.ldc{display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+.ring{position:relative;width:min(220px,56vw);aspect-ratio:1;display:grid;place-items:center}
+.ring svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.ring .tr{fill:none;stroke:var(--sand);stroke-width:1.5}
+.ring .pr{fill:none;stroke:var(--gold);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:597;stroke-dashoffset:597}
+.mono{position:relative;width:46%;aspect-ratio:203/226}
+.mono img{position:absolute;inset:0;width:100%;height:100%}
+.mono .ghost{opacity:.14;filter:grayscale(1)}
+.mono .fill{clip-path:inset(calc(100% - var(--p,0%)) 0 0 0)}
+.ldc .n{font-family:var(--serif);font-size:58px;line-height:1;color:var(--olive2);font-variant-numeric:lining-nums tabular-nums}
+.ldc .n small{font-size:.45em;color:var(--gold2)}
+.ldc .nm{font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:var(--olive);padding-left:.42em}
+.ldc .sb{font-size:11px;letter-spacing:.5em;text-transform:uppercase;color:var(--mid);margin-top:-12px;padding-left:.5em}
+
+/* ===== Topo ===== */
+.nav{position:fixed;inset:0 0 auto;z-index:60;padding-block:18px;transition:padding .4s,background .4s,box-shadow .4s}
+.nav.solid{padding-block:10px;background:rgba(245,237,225,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:40px;height:auto}
+.brand b{display:block;font-family:var(--serif);font-weight:500;font-size:19px;letter-spacing:.24em;text-transform:uppercase;color:var(--olive2);line-height:1}
+.brand small{display:block;font-size:10px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold2);margin-top:5px}
+.links{display:flex;gap:30px;font-size:14.5px;letter-spacing:.04em}
+.links a{text-decoration:none;position:relative;padding-block:4px}
+.links a::after{content:"";position:absolute;left:50%;right:50%;bottom:0;height:1px;background:var(--gold);transition:left .4s var(--ease),right .4s var(--ease)}
+.links a:hover::after{left:0;right:0}
+@media(max-width:1000px){.links{display:none}}
+.btn{--x:0px;--y:0px;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 28px;border-radius:999px;border:0;cursor:pointer;font-weight:500;font-size:15px;letter-spacing:.04em;text-decoration:none;white-space:nowrap;overflow:hidden;isolation:isolate;transform:translate(var(--x),var(--y));transition:transform .4s var(--ease),color .4s,box-shadow .4s}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;transform:translateY(101%);transition:transform .5s var(--ease)}
+.btn:hover::before{transform:none}
+.btn svg{width:19px;height:19px;flex:none}
+.btn.o{background:var(--olive);color:var(--paper);box-shadow:0 16px 34px -18px rgba(88,89,58,.9)}
+.btn.o::before{background:var(--olive2)}
+.btn.g{background:var(--gold);color:var(--paper);box-shadow:0 16px 34px -18px rgba(169,128,58,.9)}
+.btn.g::before{background:var(--gold2)}
+.btn.l{background:transparent;color:var(--olive2);box-shadow:inset 0 0 0 1px var(--olive3)}
+.btn.l::before{background:var(--olive)}
+.btn.l:hover{color:var(--paper)}
+.btn .ar{transition:transform .4s var(--ease)}
+.btn:hover .ar{transform:translateX(5px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+.nav .btn{padding:12px 20px;font-size:14px}
+@media(max-width:560px){.nav .btn span{display:none}.nav .btn{padding:12px}.brand small{display:none}.brand b{font-size:16px;letter-spacing:.18em}}
+
+/* ===== Hero ===== */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding-block:130px 70px}
+.wave{position:absolute;pointer-events:none}
+.wave.a{left:-8%;top:-12%;width:min(400px,46vw);opacity:.9}
+.wave.b{right:-8%;bottom:-6%;width:min(420px,50vw);transform:rotate(180deg)}
+.wave path.f{fill:var(--olive3);opacity:.85}
+.wave path.f2{fill:var(--sage);opacity:.55}
+.wave path.s{fill:none;stroke:var(--gold);stroke-width:1.4;stroke-dasharray:1400;stroke-dashoffset:1400}
+.ready .wave path.s{animation:draw 3s var(--ease) .4s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hgrid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,80px);align-items:center}
+.htx{display:flex;flex-direction:column;gap:24px}
+.hero h1{font-size:clamp(52px,7.4vw,112px);letter-spacing:-.015em;line-height:.92}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 .ln>span{display:inline-block;transform:translateY(105%)}
+.ready .hero h1 .ln>span{animation:up 1.2s var(--ease) forwards;animation-delay:calc(var(--i)*.12s + .15s)}
+@keyframes up{to{transform:none}}
+.hero .lead{max-width:46ch;color:var(--mid);font-size:clamp(17px,1.35vw,19px);font-weight:300}
+.fx{opacity:0;transform:translateY(22px)}
+.ready .fx{animation:fin 1s var(--ease) forwards;animation-delay:var(--d,.6s)}
+@keyframes fin{to{opacity:1;transform:none}}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:26px;flex-wrap:wrap;padding-top:8px;font-size:14px;color:var(--mid)}
+.trust span{display:flex;align-items:center;gap:8px}
+.trust i{width:30px;height:30px;border-radius:50%;background:var(--paper);display:grid;place-items:center;font-style:normal;color:var(--gold2);box-shadow:inset 0 0 0 1px var(--line)}
+/* retrato em arco */
+.port{position:relative;justify-self:center;width:min(440px,100%)}
+.arch{position:relative;aspect-ratio:526/880;border-radius:999px 999px 28px 28px;overflow:hidden;background:var(--sand);clip-path:inset(100% 0 0 0 round 999px 999px 28px 28px)}
+.ready .arch{animation:arch 1.5s var(--ease) .3s forwards}
+@keyframes arch{to{clip-path:inset(0 0 0 0 round 999px 999px 28px 28px)}}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 0;transform:scale(1.15) translateY(var(--py,0px));transition:transform 1.8s var(--ease)}
+.ready .arch img{transform:scale(1.02) translateY(var(--py,0px))}
+.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(245,237,225,0) 60%,rgba(88,89,58,.35))}
+.arcline{position:absolute;inset:-16px;border-radius:999px 999px 40px 40px;border:1px solid var(--gold);opacity:.6;pointer-events:none}
+.badge{position:absolute;display:flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;border-radius:999px;background:rgba(251,247,240,.92);backdrop-filter:blur(8px);box-shadow:0 20px 40px -20px rgba(74,70,50,.5);font-size:14px;line-height:1.3;animation:bob 6s ease-in-out infinite}
+.badge i{width:40px;height:40px;border-radius:50%;background:var(--olive);color:var(--goldl);display:grid;place-items:center;font-style:normal;flex:none}
+.badge b{display:block;font-weight:500}
+.badge small{color:var(--mid)}
+.badge.b1{left:-40px;top:58%}
+.badge.b2{right:-30px;bottom:14%;animation-delay:-3s}
+@keyframes bob{50%{transform:translateY(-10px)}}
+@media(max-width:900px){.hgrid{grid-template-columns:1fr}.port{order:-1;width:min(270px,70vw)}.hero{padding-top:110px}.badge.b1{left:-14px}.badge.b2{right:-10px}}
+@media(max-width:480px){.badge{font-size:12.5px;padding:8px 12px 8px 8px}.badge i{width:32px;height:32px}}
+
+/* faixa */
+.marq{background:var(--olive);color:var(--cream);overflow:hidden;padding-block:20px;transform:rotate(-1.2deg);margin-inline:-20px}
+.marq .tr{display:flex;width:max-content;animation:mq 40s linear infinite}
+.marq span{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.6vw,34px);padding-inline:26px;white-space:nowrap;display:flex;align-items:center;gap:52px}
+.marq span::after{content:"✦";font-style:normal;font-size:.6em;color:var(--goldl)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mqw{overflow:hidden;padding-block:30px}
+
+/* ===== Especialidades ===== */
+.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:54px}
+.sh .l{display:flex;flex-direction:column;gap:18px;max-width:760px}
+.sh p{color:var(--mid);max-width:42ch;font-weight:300}
+.esp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ec{position:relative;padding:38px 32px 34px;border-radius:200px 200px 26px 26px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;overflow:hidden;isolation:isolate;transition:transform .6s var(--spring),box-shadow .5s;transform-style:preserve-3d}
+.ec::before{content:"";position:absolute;inset:auto 0 0;height:0;z-index:-1;background:var(--olive);transition:height .7s var(--ease)}
+.ec:hover::before{height:100%}
+.ec:hover{color:var(--cream)}
+.ec:hover h3{color:var(--paper)}
+.ec:hover p{color:rgba(245,237,225,.82)}
+.ec .ic{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1px var(--gold);color:var(--gold2);margin-top:12px;transition:transform .7s var(--spring),color .4s,background .4s}
+.ec:hover .ic{transform:rotate(-8deg) scale(1.06);color:var(--goldl);background:rgba(255,255,255,.06)}
+.ec .ic svg{width:44px;height:44px}
+.ec p{color:var(--mid);font-weight:300;transition:color .4s}
+.ec ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.ec li{font-size:13px;padding:5px 12px;border-radius:999px;background:var(--cream2);transition:background .4s,color .4s}
+.ec:hover li{background:rgba(255,255,255,.1);color:var(--cream)}
+@media(max-width:980px){.esp{grid-template-columns:1fr}.ec{border-radius:28px;flex-direction:row;text-align:left;align-items:flex-start;gap:22px;padding:28px}.ec .ic{margin:0;flex:none;width:72px;height:72px}.ec .ic svg{width:34px;height:34px}.ec ul{justify-content:flex-start}.ec .bd{display:flex;flex-direction:column;gap:10px}}
+@media(min-width:981px){.ec .bd{display:contents}}
+
+/* ===== Técnicas ===== */
+.tec{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.tph{position:relative}
+.tph .im{border-radius:28px;overflow:hidden;aspect-ratio:588/500;box-shadow:0 50px 90px -50px rgba(74,70,50,.6)}
+.tph img{width:100%;height:100%;object-fit:cover;transform:scale(1.12) translateY(var(--py,0px))}
+.tph .fr{position:absolute;inset:22px -22px -22px 22px;border-radius:28px;border:1px solid var(--gold);z-index:-1}
+.tph .seal{position:absolute;left:-30px;bottom:-30px;width:130px;height:130px;border-radius:50%;background:var(--olive);display:grid;place-items:center}
+.tph .seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
+.tph .seal img{width:44px;height:auto;transform:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tlist{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.ti{border-top:1px solid var(--line)}
+.ti:last-child{border-bottom:1px solid var(--line)}
+.ti button{width:100%;display:flex;align-items:center;gap:18px;padding:22px 0;background:none;border:0;cursor:pointer;text-align:left}
+.ti .nn{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--gold2);width:34px}
+.ti .tt{flex:1;font-family:var(--serif);font-size:clamp(26px,2.6vw,34px);color:var(--olive2);line-height:1.05}
+.ti .pl{width:36px;height:36px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--olive3);display:grid;place-items:center;transition:transform .5s var(--ease),background .4s,color .4s;flex:none}
+.ti.on .pl{transform:rotate(45deg);background:var(--olive);color:var(--paper)}
+.ti .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
+.ti.on .ans{grid-template-rows:1fr}
+.ti .ans>div{overflow:hidden}
+.ti .ans p{padding:0 0 24px 52px;color:var(--mid);font-weight:300}
+@media(max-width:900px){.tec{grid-template-columns:1fr}.tph{margin:0 22px 30px}}
+
+/* ===== Mapa do corpo ===== */
+.dor{background:var(--olive);color:var(--cream);border-radius:clamp(30px,5vw,60px);margin-inline:clamp(8px,1.4vw,18px);position:relative;overflow:hidden}
+.dor h2{color:var(--paper)}
+.dor .kick{color:var(--goldl)}
+.dor .sh p{color:rgba(245,237,225,.75)}
+.dgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,70px);align-items:center}
+.body{position:relative;max-width:330px;width:100%;justify-self:center}
+.body svg{width:100%;height:auto;overflow:visible}
+.body .sil{fill:rgba(245,237,225,.1);stroke:rgba(228,201,143,.55);stroke-width:1.5}
+.hs{cursor:pointer}
+.hs circle.c{fill:var(--gold);transition:r .3s}
+.hs circle.p{fill:none;stroke:var(--goldl);stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:pulse 2.2s ease-out infinite}
+.hs.on circle.c{fill:var(--paper)}
+.hs:hover circle.c,.hs.on circle.c{r:9}
+.hs:focus-visible{outline:none}
+.hs:focus-visible circle.c{stroke:var(--paper);stroke-width:3}
+@keyframes pulse{from{transform:scale(.6);opacity:1}to{transform:scale(2.4);opacity:0}}
+.dchips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.dchips button{border:0;cursor:pointer;padding:9px 16px;border-radius:999px;background:rgba(245,237,225,.08);box-shadow:inset 0 0 0 1px rgba(245,237,225,.2);color:var(--cream);font-size:14.5px;transition:background .3s,color .3s}
+.dchips button:hover{background:rgba(245,237,225,.16)}
+.dchips button.on{background:var(--gold);color:var(--paper);box-shadow:none}
+.dcard{border-radius:28px;background:var(--paper);color:var(--ink);padding:clamp(26px,3.4vw,42px);display:flex;flex-direction:column;gap:16px;min-height:330px}
+.dcard .in{display:flex;flex-direction:column;gap:16px;animation:fin .55s var(--ease)}
+.dcard h3{font-size:clamp(34px,3.6vw,46px)}
+.dcard p{color:var(--mid);font-weight:300}
+.dcard .tg{display:flex;flex-wrap:wrap;gap:6px}
+.dcard .tg span{font-size:13px;padding:5px 12px;border-radius:999px;background:var(--cream2)}
+.dcard .nt{font-size:12.5px;color:var(--mid);opacity:.8}
+@media(max-width:900px){.dgrid{grid-template-columns:1fr}.body{max-width:240px}}
+
+/* ===== Domiciliar ===== */
+.dom{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;position:relative}
+.dom::before{content:"";position:absolute;left:6%;right:6%;top:48px;height:1px;background:repeating-linear-gradient(90deg,var(--gold) 0 6px,transparent 6px 14px);opacity:.7}
+.ds{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding-inline:8px}
+.ds .bub{width:96px;height:96px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line),0 20px 40px -24px rgba(74,70,50,.5);display:grid;place-items:center;color:var(--olive);transition:transform .6s var(--spring),background .5s,color .5s}
+.ds.on .bub{background:var(--olive);color:var(--goldl);transform:scale(1.06)}
+.ds .bub svg{width:40px;height:40px}
+.ds small{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold2)}
+.ds h3{font-size:26px}
+.ds p{color:var(--mid);font-weight:300;font-size:15.5px}
+@media(max-width:900px){.dom{grid-template-columns:1fr 1fr;row-gap:40px}.dom::before{display:none}}
+@media(max-width:480px){.dom{grid-template-columns:1fr}}
+
+/* ===== Sobre ===== */
+.sobre{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.sbimg{position:relative;justify-self:center;width:min(400px,100%)}
+.sbimg .cir{aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 10px var(--paper),0 0 0 11px var(--gold),0 50px 90px -40px rgba(74,70,50,.6)}
+.sbimg .cir img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.sbimg .sig{position:absolute;right:-10px;bottom:6%;background:var(--olive);color:var(--cream);padding:14px 22px;border-radius:18px;font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.1;box-shadow:0 20px 40px -20px rgba(74,70,50,.6)}
+.sbimg .sig small{display:block;font-family:var(--f);font-style:normal;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--goldl);margin-top:4px}
+.sobre .tx{display:flex;flex-direction:column;gap:20px}
+.sobre .tx p{color:var(--mid);font-weight:300}
+.quote{font-family:var(--serif);font-style:italic;font-size:clamp(26px,2.6vw,34px);line-height:1.2;color:var(--olive2);padding-left:24px;border-left:1px solid var(--gold)}
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.vals div{padding:18px;border-radius:20px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);font-size:14.5px;line-height:1.4}
+.vals b{display:block;font-family:var(--serif);font-weight:500;font-size:22px;color:var(--olive2);margin-bottom:4px}
+@media(max-width:900px){.sobre{grid-template-columns:1fr}}
+@media(max-width:520px){.vals{grid-template-columns:1fr}}
+
+/* ===== Para quem ===== */
+.pq{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.pi{position:relative;padding:26px;border-radius:24px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);display:flex;gap:16px;align-items:flex-start;transition:transform .5s var(--spring),box-shadow .4s}
+.pi:hover{transform:translateY(-5px);box-shadow:inset 0 0 0 1px var(--gold),0 30px 50px -34px rgba(74,70,50,.5)}
+.pi .e{font-size:26px;line-height:1;flex:none;width:52px;height:52px;border-radius:16px;background:var(--cream2);display:grid;place-items:center}
+.pi h3{font-size:24px;margin-bottom:4px}
+.pi p{color:var(--mid);font-size:15px;font-weight:300}
+@media(max-width:980px){.pq{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.pq{grid-template-columns:1fr}}
+
+/* ===== FAQ ===== */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px);align-items:start}
+.faq .sh{margin:0}
+@media(max-width:900px){.faq{grid-template-columns:1fr}}
+
+/* ===== Região + mapa ===== */
+.reg{display:grid;grid-template-columns:.85fr 1.15fr;border-radius:32px;overflow:hidden;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line),0 50px 90px -60px rgba(74,70,50,.6)}
+.reg .info{padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:18px;min-width:0}
+.ri{display:flex;gap:14px;align-items:flex-start;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.ri .ic{flex:none;width:46px;height:46px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--gold);color:var(--gold2);display:grid;place-items:center}
+.ri small{display:block;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2)}
+.ri div{min-width:0;overflow-wrap:anywhere}
+.ri a{text-decoration:none}
+.map{position:relative;min-height:520px;background:var(--cream2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.25) saturate(.85)}
+.map .tag{position:absolute;left:18px;top:18px;z-index:2;padding:10px 16px;border-radius:999px;background:var(--olive);color:var(--cream);font-size:13.5px;box-shadow:0 14px 30px -14px rgba(74,70,50,.7)}
+@media(max-width:900px){.reg{grid-template-columns:1fr}.map{min-height:360px}}
+
+/* ===== Final ===== */
+.final{position:relative;overflow:hidden;background:var(--olive);color:var(--cream);text-align:center;padding-block:clamp(100px,13vw,170px)}
+.final .wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:24px}
+.final img.lg{width:72px}
+.final h2{color:var(--paper);font-size:clamp(46px,7vw,100px);max-width:13ch}
+.final h2 em{color:var(--goldl)}
+.final p{color:rgba(245,237,225,.78);max-width:44ch;font-weight:300}
+.final .wave{opacity:.5}
+.final .wave path.f{fill:var(--olive3)}
+.final .wave path.f2{fill:var(--olive2)}
+footer{background:var(--olive2);color:rgba(245,237,225,.7);padding-block:34px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+footer a{text-decoration:none}
+footer a:hover{color:var(--goldl)}
+
+.js .rv{opacity:0;transform:translateY(40px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.js .rv.on{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.1s}.js .rv.d2{transition-delay:.2s}.js .rv.d3{transition-delay:.3s}
+
+/* ===== Assistente (esquerda) ===== */
+.abt{position:fixed;left:max(18px,env(safe-area-inset-left));bottom:max(18px,env(safe-area-inset-bottom));z-index:90;display:flex;align-items:center;gap:12px;border:0;cursor:pointer;padding:7px 20px 7px 7px;border-radius:999px;background:var(--paper);box-shadow:0 0 0 1px var(--line),0 22px 44px -18px rgba(74,70,50,.55);text-align:left;line-height:1.2;transition:transform .4s var(--spring)}
+.abt:hover{transform:translateY(-3px)}
+.abt .av{position:relative;width:46px;height:46px;border-radius:50%;background:var(--olive);display:grid;place-items:center;flex:none}
+.abt .av img{width:24px}
+.abt .av::after{content:"";position:absolute;right:0;bottom:0;width:11px;height:11px;border-radius:50%;background:#7fbf8a;border:2px solid var(--paper)}
+.abt b{display:block;font-weight:500;font-size:14.5px}
+.abt small{font-size:12px;color:var(--mid)}
+.as{position:fixed;left:max(14px,env(safe-area-inset-left));bottom:calc(max(18px,env(safe-area-inset-bottom)) + 74px);z-index:91;width:min(400px,calc(100vw - 28px));max-height:min(640px,calc(100svh - 120px));display:flex;flex-direction:column;border-radius:26px;background:var(--paper);overflow:hidden;box-shadow:0 0 0 1px var(--line),0 50px 90px -30px rgba(74,70,50,.6);transform-origin:bottom left;animation:apop .5s var(--spring)}
+@keyframes apop{from{opacity:0;transform:scale(.86) translateY(16px)}}
+.as header{display:flex;align-items:center;gap:12px;padding:16px;background:var(--olive);color:var(--cream)}
+.as header .av{width:42px;height:42px;border-radius:50%;background:rgba(245,237,225,.12);display:grid;place-items:center;box-shadow:inset 0 0 0 1px var(--goldl)}
+.as header .av img{width:22px}
+.as header b{display:block;font-family:var(--serif);font-weight:500;font-size:21px;line-height:1.1}
+.as header small{display:flex;align-items:center;gap:6px;font-size:12.5px;opacity:.85}
+.as header small::before{content:"";width:7px;height:7px;border-radius:50%;background:#9fd6a8}
+.as header button{margin-left:auto;width:34px;height:34px;border-radius:50%;border:0;cursor:pointer;background:rgba(245,237,225,.14);color:var(--cream);font-size:18px}
+.msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--cream);font-size:15px;line-height:1.55}
+.m{max-width:88%;padding:11px 15px;border-radius:20px;opacity:0;transform:translateY(8px);animation:fin .4s var(--ease) forwards}
+.m.b{background:var(--paper);border-bottom-left-radius:6px;box-shadow:0 0 0 1px var(--line)}
+.m.u{background:var(--olive);color:var(--cream);align-self:flex-end;border-bottom-right-radius:6px}
+.m a{color:var(--gold2);font-weight:500}
+.m b{font-weight:600;color:var(--olive2)}
+.typing{display:flex;gap:5px;padding:15px 16px}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:dt 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes dt{50%{transform:translateY(-5px);opacity:.4}}
+.qk{display:flex;gap:7px;padding:10px 12px;overflow-x:auto;border-top:1px solid var(--line);scrollbar-width:none;background:var(--paper)}
+.qk::-webkit-scrollbar{display:none}
+.qk button{flex:none;border:0;cursor:pointer;padding:8px 13px;border-radius:999px;background:var(--cream2);font-size:13.5px;transition:background .25s}
+.qk button:hover{background:var(--goldl)}
+.as form{display:flex;gap:8px;padding:12px;background:var(--paper)}
+.as input{flex:1;min-width:0;border:0;border-radius:999px;padding:12px 16px;background:var(--cream);box-shadow:inset 0 0 0 1px var(--line);font-size:15px}
+.as form button{width:46px;height:46px;border-radius:50%;border:0;background:var(--olive);color:var(--goldl);cursor:pointer;display:grid;place-items:center;flex:none}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.js .rv,.fx{opacity:1;transform:none}.hero h1 .ln>span{transform:none}.arch{clip-path:none}}
+</style>
+</head>
+<body class="loading">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2Z"/></symbol>
+  
+</defs></svg>
+
+<!-- ABERTURA 0-100 -->
+<div class="loader" id="loader" aria-hidden="true"><div class="ldc">
+  <div class="ring"><svg viewBox="0 0 200 200"><circle class="tr" cx="100" cy="100" r="95"/><circle class="pr" id="ldR" cx="100" cy="100" r="95"/></svg>
+    <div class="mono" id="mono"><img class="ghost" src="img/logo.png" alt=""><img class="fill" src="img/logo.png" alt=""></div></div>
+  <div class="n"><span id="ldN">0</span><small>%</small></div>
+  <div class="nm">Larissa Araújo</div><div class="sb">Fisioterapeuta</div>
+</div></div>
+
+<nav class="nav" id="nav"><div class="wrap">
+  <a class="brand" href="#inicio" aria-label="Larissa Araújo Fisioterapeuta, início"><img src="img/logo.png" alt=""><span><b>Larissa Araújo</b><small>Fisioterapeuta</small></span></a>
+  <div class="links"><a href="#especialidades">Especialidades</a><a href="#tecnicas">Técnicas</a><a href="#onde-doi">Onde dói?</a><a href="#domiciliar">Em casa</a><a href="#sobre">Sobre</a><a href="#regiao">Contato</a></div>
+  <a class="btn o wa" href="#" data-msg="Olá, Larissa! Vim pelo site e gostaria de agendar uma avaliação."><svg><use href="#i-wa"/></svg><span>Agendar</span></a>
+</div></nav>
+
+<header class="hero" id="inicio">
+  <svg class="wave a" viewBox="0 0 500 400" aria-hidden="true"></svg>
+  <svg class="wave b" viewBox="0 0 500 400" aria-hidden="true"></svg>
+  <div class="wrap hgrid">
+    <div class="htx">
+      <span class="kick fx" style="--d:.1s">Fisioterapia domiciliar · Garanhuns e região</span>
+      <h1 id="h1"><span class="ln"><span style="--i:0">Cuidado que</span></span><span class="ln"><span style="--i:1"><em>transforma,</em></span></span><span class="ln"><span style="--i:2">no conforto</span></span><span class="ln"><span style="--i:3">do seu lar.</span></span></h1>
+      <p class="lead fx" style="--d:.75s">Atendimento humanizado e individualizado em traumato-ortopedia, neurologia e geriatria. A fisioterapia vai até você, com hora marcada e toda a atenção que você merece.</p>
+      <div class="cta fx" style="--d:.9s"><a class="btn o wa" href="#" data-msg="Olá, Larissa! Vim pelo site e gostaria de agendar uma avaliação."><svg><use href="#i-wa"/></svg>Agendar avaliação <span class="ar">→</span></a><a class="btn l" href="#onde-doi">Onde você sente dor?</a></div>
+      <div class="trust fx" style="--d:1.05s"><span><i>⌂</i>Atendimento a domicílio</span><span><i>◷</i>Somente com hora marcada</span><span><i>✓</i>Aceita Pix</span></div>
+    </div>
+    <div class="port">
+      <span class="arcline"></span>
+      <div class="arch"><img id="pimg" src="img/larissa.jpg" alt="Larissa Araújo, fisioterapeuta, sorrindo com o jaleco bordado com seu nome" fetchpriority="high"></div>
+      <div class="badge b1 fx" style="--d:1.3s"><i>♡</i><span><b>Atendimento humanizado</b><small>do jeito que você precisa</small></span></div>
+      <div class="badge b2 fx" style="--d:1.45s"><i>⌂</i><span><b>Vou até você</b><small>Garanhuns e região</small></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="mqw" aria-hidden="true"><div class="marq"><div class="tr" id="mq"><span>Reabilitação funcional</span><span>Traumato-ortopedia</span><span>Neurofuncional</span><span>Geriatria</span><span>Liberação miofascial</span><span>Drenagem linfática</span><span>Atendimento domiciliar</span></div></div></div>
+
+<section class="pad" id="especialidades"><div class="wrap">
+  <div class="sh"><div class="l"><span class="kick rv">Especialidades</span><h2 class="rv d1">Fisioterapia para cada <em>fase da vida.</em></h2></div><p class="rv d2">Cada plano de tratamento é montado a partir de uma avaliação cuidadosa, respeitando a sua história, o seu ritmo e os seus objetivos.</p></div>
+  <div class="esp">
+    <article class="ec rv"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="10" r="5"/><path d="M14 44V28l-4-10h20l-4 10v16"/><circle cx="33" cy="24" r="6"/><circle cx="33" cy="24" r="2.5"/><path d="M33 14v4M33 30v4M23 24h4M39 24h4"/></svg></span><div class="bd"><h3>Traumato-ortopédica</h3><p>Reabilitação e prevenção de lesões e dores musculoesqueléticas.</p><ul><li>Coluna</li><li>Pós-operatório</li><li>Fraturas</li><li>Entorses</li></ul></div></article>
+    <article class="ec rv d1"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M24 8c-4-4-12-3-13 3-5 1-7 7-4 11-3 4-1 10 4 11 1 5 7 7 11 4l2-1"/><path d="M24 8c4-4 12-3 13 3 5 1 7 7 4 11 3 4 1 10-4 11-1 5-7 7-11 4"/><path d="M24 8v32M17 17c2 2 5 2 7 0M31 25c-2-2-5-2-7 0M15 27c2 1 4 1 6-1"/></svg></span><div class="bd"><h3>Neurofuncional</h3><p>Reabilitação neurológica para mais autonomia e qualidade de vida.</p><ul><li>AVC</li><li>Parkinson</li><li>Equilíbrio</li><li>Marcha</li></ul></div></article>
+    <article class="ec rv d2"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="22" cy="8" r="4.5"/><path d="M22 14c-4 3-6 8-6 14l4 2v14M22 14l2 10 6 4M20 30l-4 14"/><path d="M34 26v18M32 26h4c1 0 2-1 2-3"/></svg></span><div class="bd"><h3>Geriátrica</h3><p>Cuidado especializado para um envelhecimento ativo e saudável.</p><ul><li>Prevenção de quedas</li><li>Força</li><li>Mobilidade</li></ul></div></article>
+  </div>
+</div></section>
+
+<section class="pad" id="tecnicas" style="padding-top:0"><div class="wrap tec">
+  <div class="tph rv">
+    <span class="fr"></span>
+    <div class="im"><img id="timg" src="img/drenagem.jpg" alt="Mãos da fisioterapeuta realizando drenagem linfática" loading="lazy"></div>
+    <div class="seal"><svg viewBox="0 0 130 130" aria-hidden="true"><defs><path id="cp" d="M65 65m-48 0a48 48 0 1 1 96 0a48 48 0 1 1-96 0"/></defs><text font-family="Jost" font-size="10.5" letter-spacing="3.4" fill="#e4c98f"><textPath href="#cp">CUIDADO QUE TRANSFORMA · BEM-ESTAR · </textPath></text></svg><img src="img/logo.png" alt=""></div>
+  </div>
+  <div>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <span class="kick rv">Técnicas que cuidam</span>
+      <h2 class="rv d1">Invista no seu bem-estar e <em>sinta a diferença.</em></h2>
+    </div>
+    <div class="tlist rv d2" id="tlist">
+      <div class="ti on"><button aria-expanded="true"><span class="nn">i.</span><span class="tt">Liberação miofascial</span><span class="pl">+</span></button><div class="ans"><div><p>Alivia tensões musculares, reduz dores e melhora a mobilidade. Indicada para quem sente o corpo “travado” no dia a dia.</p></div></div></div>
+      <div class="ti"><button aria-expanded="false"><span class="nn">ii.</span><span class="tt">Drenagem linfática</span><span class="pl">+</span></button><div class="ans"><div><p>Estimula a circulação linfática, reduz inchaços e promove sensação de leveza. Uma pausa de cuidado para o seu corpo.</p></div></div></div>
+      <div class="ti"><button aria-expanded="false"><span class="nn">iii.</span><span class="tt">Reabilitação funcional</span><span class="pl">+</span></button><div class="ans"><div><p>Exercícios orientados para recuperar força, movimento e independência nas atividades da rotina.</p></div></div></div>
+      <div class="ti"><button aria-expanded="false"><span class="nn">iv.</span><span class="tt">Atendimento a domicílio</span><span class="pl">+</span></button><div class="ans"><div><p>Mais praticidade, conforto e atenção no seu lar, sem deslocamento e sem filas.</p></div></div></div>
+    </div>
+    <a class="btn g wa rv d3" style="margin-top:28px" href="#" data-msg="Olá, Larissa! Tenho interesse em liberação miofascial / drenagem linfática.">Quero agendar uma sessão <span class="ar">→</span></a>
+  </div>
+</div></section>
+
+<section class="dor pad" id="onde-doi"><div class="wrap">
+  <div class="sh"><div class="l"><span class="kick rv">Mapa do cuidado</span><h2 class="rv d1">Onde você sente <em style="color:var(--goldl)">dor?</em></h2></div><p class="rv d2">Toque em um ponto do corpo ou escolha uma necessidade. Você vê como a fisioterapia pode ajudar e já fala com a Larissa.</p></div>
+  <div class="dgrid">
+    <div class="body rv"><svg viewBox="0 0 200 420" id="bsvg" role="group" aria-label="Mapa do corpo">
+      <path class="sil" d="M100 14c14 0 23 11 23 25s-9 26-23 26-23-12-23-26 9-25 23-25Zm-12 52h24l2 10c14 2 28 6 34 14 6 9 8 30 10 52l6 60c1 8-8 10-10 2l-10-58-4 20 2 60-6 110c-1 10-15 10-16 0l-6-100-4 0-6 100c-1 10-15 10-16 0l-6-110 2-60-4-20-10 58c-2 8-11 6-10-2l6-60c2-22 4-43 10-52 6-8 20-12 34-14Z"/>
+    </svg></div>
+    <div>
+      <div class="dchips rv" id="dchips"></div>
+      <div class="dcard rv d1" id="dcard" aria-live="polite"></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="pad" id="domiciliar"><div class="wrap">
+  <div class="sh"><div class="l"><span class="kick rv">Atendimento domiciliar</span><h2 class="rv d1">A fisioterapia vai <em>até você.</em></h2></div><p class="rv d2">Sem trânsito, sem sala de espera. Você é atendido no ambiente onde vive, e o tratamento já se adapta à sua rotina real.</p></div>
+  <div class="dom" id="dom">
+    <div class="ds rv"><span class="bub"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 10h24v16H17l-7 6v-6H8Z"/><path d="M14 17h12M14 21h7"/></svg></span><small>Passo 1</small><h3>Você chama</h3><p>Pelo WhatsApp, conta o que está sentindo e escolhe o melhor horário.</p></div>
+    <div class="ds rv d1"><span class="bub"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 19 20 8l14 11v14H6Z"/><path d="M20 30s-6-4-6-8a3 3 0 0 1 6-1 3 3 0 0 1 6 1c0 4-6 8-6 8Z"/></svg></span><small>Passo 2</small><h3>Avaliação em casa</h3><p>A Larissa vai até você e faz uma avaliação completa e individual.</p></div>
+    <div class="ds rv d2"><span class="bub"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="9" y="7" width="22" height="27" rx="3"/><path d="M15 7V5h10v2M14 16h12M14 21h12M14 26h7"/></svg></span><small>Passo 3</small><h3>Plano personalizado</h3><p>Um tratamento pensado para a sua condição, objetivos e rotina.</p></div>
+    <div class="ds rv d3"><span class="bub"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M20 34s-12-7-12-16a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 9-12 16-12 16Z"/><path d="m15 19 4 4 7-7"/></svg></span><small>Passo 4</small><h3>Evolução</h3><p>Acompanhamento de perto, sessão a sessão, até você se sentir bem.</p></div>
+  </div>
+</div></section>
+
+<section class="pad" id="sobre" style="padding-top:0"><div class="wrap sobre">
+  <div class="sbimg rv"><div class="cir"><img src="img/avatar.jpg" alt="Larissa Araújo em seu espaço de fisioterapia"></div><div class="sig">Larissa Araújo<small>Fisioterapeuta</small></div></div>
+  <div class="tx">
+    <span class="kick rv">Quem cuida de você</span>
+    <h2 class="rv d1">Prazer, sou a <em>Larissa.</em></h2>
+    <p class="quote rv d2">“Acredito em um cuidado que olha para a pessoa inteira, não só para a dor.”</p>
+    <p class="rv d2">Sou fisioterapeuta e atendo em Garanhuns e região, levando a fisioterapia até a casa dos meus pacientes. Meu trabalho é humanizado e individualizado: cada pessoa recebe um plano feito sob medida, com escuta, paciência e acompanhamento próximo.</p>
+    <div class="vals rv d3"><div><b>Escuta</b>Entender a sua história antes de tratar.</div><div><b>Presença</b>Atendimento no seu lar, no seu tempo.</div><div><b>Evolução</b>Objetivos claros e acompanhamento contínuo.</div></div>
+  </div>
+</div></section>
+
+<section class="pad" style="padding-top:0"><div class="wrap">
+  <div class="sh"><div class="l"><span class="kick rv">Para quem é</span><h2 class="rv d1">Talvez seja <em>para você</em> também.</h2></div></div>
+  <div class="pq">
+    <div class="pi rv"><span class="e">🦴</span><div><h3>Pós-cirurgia</h3><p>Recuperação após cirurgias ortopédicas, com segurança e sem sair de casa.</p></div></div>
+    <div class="pi rv d1"><span class="e">🧓</span><div><h3>Idosos</h3><p>Mais equilíbrio, força e confiança para as atividades do dia a dia.</p></div></div>
+    <div class="pi rv d2"><span class="e">🧠</span><div><h3>Após AVC</h3><p>Reabilitação neurológica para recuperar movimentos e autonomia.</p></div></div>
+    <div class="pi rv"><span class="e">💼</span><div><h3>Dores do dia a dia</h3><p>Coluna, pescoço e ombros sobrecarregados pela rotina e pela postura.</p></div></div>
+    <div class="pi rv d1"><span class="e">🏃</span><div><h3>Lesões e entorses</h3><p>Tratamento e prevenção para você voltar a se movimentar com tranquilidade.</p></div></div>
+    <div class="pi rv d2"><span class="e">🌿</span><div><h3>Bem-estar</h3><p>Liberação miofascial e drenagem para aliviar tensões e inchaços.</p></div></div>
+  </div>
+</div></section>
+
+<section class="pad" style="padding-top:0"><div class="wrap faq">
+  <div class="sh"><div class="l"><span class="kick rv">Dúvidas frequentes</span><h2 class="rv d1">Perguntas <em>comuns.</em></h2><p class="rv d2">Não achou sua dúvida? Pergunte à assistente virtual ou fale direto com a Larissa.</p><a class="btn o wa rv d3" style="align-self:flex-start" href="#" data-msg="Olá, Larissa! Tenho uma dúvida sobre o atendimento."><svg><use href="#i-wa"/></svg>Tirar dúvida</a></div></div>
+  <div class="tlist rv d1" id="faq">
+    <div class="ti on"><button aria-expanded="true"><span class="nn">i.</span><span class="tt">Como funciona o atendimento em casa?</span><span class="pl">+</span></button><div class="ans"><div><p>Você agenda pelo WhatsApp e a Larissa vai até a sua casa no horário marcado, levando o que for necessário para a sessão.</p></div></div></div>
+    <div class="ti"><button aria-expanded="false"><span class="nn">ii.</span><span class="tt">Quais cidades são atendidas?</span><span class="pl">+</span></button><div class="ans"><div><p>Garanhuns e região. Se você mora em uma cidade próxima, chame no WhatsApp para confirmar a disponibilidade.</p></div></div></div>
+    <div class="ti"><button aria-expanded="false"><span class="nn">iii.</span><span class="tt">Preciso de pedido médico?</span><span class="pl">+</span></button><div class="ans"><div><p>Se você tiver, ajuda muito trazer exames e relatórios para a avaliação. Para tirar a dúvida sobre o seu caso, fale com a Larissa.</p></div></div></div>
+    <div class="ti"><button aria-expanded="false"><span class="nn">iv.</span><span class="tt">Quais as formas de pagamento?</span><span class="pl">+</span></button><div class="ans"><div><p>O atendimento aceita Pix. Valores e pacotes são informados pelo WhatsApp, de acordo com o tratamento.</p></div></div></div>
+    <div class="ti"><button aria-expanded="false"><span class="nn">v.</span><span class="tt">Qual o horário de atendimento?</span><span class="pl">+</span></button><div class="ans"><div><p>Somente com hora marcada. Combine o melhor dia e horário pelo WhatsApp.</p></div></div></div>
+  </div>
+</div></section>
+
+<section id="regiao" style="padding-bottom:clamp(80px,10vw,130px)"><div class="wrap">
+  <div class="sh"><div class="l"><span class="kick rv">Área de atendimento</span><h2 class="rv d1">Garanhuns <em>e região.</em></h2></div><p class="rv d2">O atendimento é domiciliar: a Larissa vai até a sua casa. Agende pelo WhatsApp.</p></div>
+  <div class="reg rv">
+    <div class="info">
+      <div class="ri"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11 12 4l9 7v9H3Z"/><path d="M9 20v-6h6v6"/></svg></span><div><small>Atendimento</small>Domiciliar em Garanhuns - PE e região</div></div>
+      <div class="ri"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>Horário</small>Somente com hora marcada</div></div>
+      <div class="ri"><span class="ic"><svg width="22" height="22"><use href="#i-wa"/></svg></span><div><small>WhatsApp</small><a class="wa" href="#" data-msg="Olá, Larissa! Vim pelo site.">(87) 99963-6123</a></div></div>
+      <div class="ri" style="border:0;padding:0"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><small>E-mail</small><a href="mailto:larissaraujosilva0@gmail.com">larissaraujosilva0@gmail.com</a></div></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px"><a class="btn o wa" href="#" data-msg="Olá, Larissa! Gostaria de agendar um atendimento em casa. Meu bairro é: "><svg><use href="#i-wa"/></svg>Agendar em casa</a><a class="btn l" href="https://www.google.com/maps/search/?api=1&query=Garanhuns+-+PE" target="_blank" rel="noopener">Abrir no Maps <span class="ar">→</span></a></div>
+    </div>
+    <div class="map"><span class="tag">⌂ Atendimento em toda Garanhuns</span><iframe title="Mapa de Garanhuns, área de atendimento" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Garanhuns+-+PE&z=13&output=embed"></iframe></div>
+  </div>
+</div></section>
+
+<section class="final">
+  <svg class="wave a" viewBox="0 0 500 400" aria-hidden="true"></svg>
+  <svg class="wave b" viewBox="0 0 500 400" aria-hidden="true"></svg>
+  <div class="wrap">
+    <img class="lg rv" src="img/logo.png" alt="Logo Larissa Araújo">
+    <h2 class="rv d1">Cuidado que transforma. <em>Agende seu atendimento.</em></h2>
+    <p class="rv d2">Uma mensagem e a fisioterapia chega até você, com carinho, técnica e hora marcada.</p>
+    <a class="btn g wa rv d3" href="#" data-msg="Olá, Larissa! Vim pelo site e gostaria de agendar uma avaliação."><svg><use href="#i-wa"/></svg>Falar com a Larissa <span class="ar">→</span></a>
+  </div>
+</section>
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Larissa Araújo · Fisioterapeuta · Garanhuns - PE</span><span><a class="wa" href="#" data-msg="Olá, Larissa! Vim pelo site.">(87) 99963-6123</a> · Aceitamos Pix</span></div></footer>
+
+<button class="abt" id="ab" aria-expanded="false" aria-controls="as"><span class="av"><img src="img/logo.png" alt=""></span><span><b>Assistente da Larissa</b><small>Tire suas dúvidas agora</small></span></button>
+<div class="as" id="as" hidden role="dialog" aria-label="Assistente virtual">
+  <header><span class="av"><img src="img/logo.png" alt=""></span><div><b>Assistente da Larissa</b><small>Online agora</small></div><button id="asX" aria-label="Fechar">×</button></header>
+  <div class="msgs" id="msgs" aria-live="polite"></div>
+  <div class="qk" id="qk"></div>
+  <form id="asF"><input id="asI" placeholder="Escreva sua dúvida…" autocomplete="off" aria-label="Sua pergunta" maxlength="200"><button aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5 21 12 3 3.5v6.6l12 1.9-12 1.9Z"/></svg></button></form>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+const WA='5587999636123', wa=m=>'https://wa.me/'+WA+'?text='+encodeURIComponent(m);
+const bindWA=r=>r.querySelectorAll('.wa').forEach(a=>{a.href=wa(a.dataset.msg||'Olá, Larissa! Vim pelo site.');a.target='_blank';a.rel='noopener'});
+bindWA(document);document.getElementById('yr').textContent=new Date().getFullYear();
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, fine=matchMedia('(hover:hover)').matches;
+
+// abertura: o "LA" se enche de dourado enquanto o anel completa
+(function(){const L=document.getElementById('loader'),N=document.getElementById('ldN'),R=document.getElementById('ldR'),M=document.getElementById('mono');const dur=reduce?200:2600,t0=performance.now();let fin=false;
+  function f(t){const p=Math.min(1,(t-t0)/dur),e=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2,v=Math.round(e*100);N.textContent=v;R.style.strokeDashoffset=597*(1-e);M.style.setProperty('--p',v+'%');if(p<1)requestAnimationFrame(f);else setTimeout(done,380)}
+  function done(){if(fin)return;fin=true;L.classList.add('go');document.body.classList.remove('loading');document.body.classList.add('ready');setTimeout(()=>L.remove(),1200)}
+  requestAnimationFrame(f);setTimeout(done,5500)})();
+
+document.querySelectorAll('svg.wave').forEach(w=>w.innerHTML='<path class="f" d="M0 0h500c-40 60-120 70-180 90S200 150 170 230 80 360 0 380Z"/><path class="f2" d="M0 0h360c-30 50-90 60-140 80S130 140 110 210 50 300 0 310Z"/><path class="s" d="M0 400C60 330 120 300 160 220S250 120 330 100 470 60 500 0"/>');
+// faixa infinita
+(function(){const t=document.getElementById('mq');t.innerHTML+=t.innerHTML})();
+
+// rolagem
+const nav=document.getElementById('nav'),pimg=document.getElementById('pimg'),timg=document.getElementById('timg');
+function onScroll(){const y=scrollY;nav.classList.toggle('solid',y>30);if(reduce)return;if(y<innerHeight)pimg.style.setProperty('--py',(y*.08)+'px');const r=timg.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)timg.style.transform='scale(1.12) translateY('+((r.top+r.height/2-innerHeight/2)*-.06)+'px)'}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.14});
+document.querySelectorAll('.rv').forEach(x=>io.observe(x));
+// passos acendem em sequência
+(function(){const ds=[...document.querySelectorAll('.ds')];new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){ds.forEach((d,i)=>setTimeout(()=>{ds.forEach(x=>x.classList.remove('on'));d.classList.add('on')},i*700+300));o.disconnect()}},{threshold:.4}).observe(document.getElementById('dom'))})();
+
+// acordeões
+document.querySelectorAll('.tlist').forEach(l=>{const it=[...l.querySelectorAll('.ti')];it.forEach(t=>t.querySelector('button').onclick=()=>{const o=!t.classList.contains('on');it.forEach(x=>{x.classList.remove('on');x.querySelector('button').setAttribute('aria-expanded','false')});if(o){t.classList.add('on');t.querySelector('button').setAttribute('aria-expanded','true')}})});
+
+// tilt nas especialidades
+if(fine&&!reduce)document.querySelectorAll('.ec').forEach(c=>{c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(900px) rotateY('+x*6+'deg) rotateX('+(-y*6)+'deg) translateY(-6px)'});c.addEventListener('pointerleave',()=>c.style.transform='')});
+
+// mapa do corpo
+(function(){const D=[
+ {n:'Pescoço',x:100,y:72,t:'Dor no pescoço e cervical',d:'Tensão por postura, estresse e longas horas no celular ou computador. A fisioterapia trabalha alívio da dor, mobilidade e orientação postural.',tg:['Liberação miofascial','Postura','Mobilidade']},
+ {n:'Ombro',x:138,y:94,t:'Dor no ombro',d:'Limitação para levantar o braço, dor ao dormir ou após esforço. Tratamento com exercícios e técnicas manuais para recuperar o movimento.',tg:['Traumato-ortopedia','Força','Amplitude']},
+ {n:'Costas / lombar',x:100,y:160,t:'Dor nas costas e lombar',d:'Uma das queixas mais comuns. Avaliação individual para entender a causa e montar um plano de alívio e fortalecimento.',tg:['Coluna','Liberação miofascial','Fortalecimento']},
+ {n:'Quadril',x:78,y:202,t:'Dor no quadril',d:'Dor ao caminhar, sentar ou levantar. Muito comum em idosos e no pós-operatório. Foco em mobilidade, força e segurança.',tg:['Geriatria','Pós-operatório','Marcha']},
+ {n:'Joelho',x:118,y:290,t:'Dor no joelho',d:'Dor ao subir escadas, inchaço ou recuperação após lesão ou cirurgia. Reabilitação para voltar a se movimentar com confiança.',tg:['Traumato-ortopedia','Pós-cirúrgico','Fortalecimento']},
+ {n:'Tornozelo',x:84,y:352,t:'Tornozelo e pés',d:'Entorses, instabilidade e inchaço nas pernas. Reabilitação funcional e drenagem linfática quando indicada.',tg:['Entorses','Equilíbrio','Drenagem']},
+ {n:'Neurológico',t:'Reabilitação neurológica',d:'Para quem passou por AVC, convive com Parkinson ou outras condições neurológicas. O objetivo é mais autonomia e qualidade de vida, em casa.',tg:['AVC','Parkinson','Equilíbrio']},
+ {n:'Idosos',t:'Fisioterapia para idosos',d:'Prevenção de quedas, mais força e equilíbrio para um envelhecimento ativo. O atendimento em casa traz conforto e segurança para a família.',tg:['Prevenção de quedas','Força','Autonomia']},
+ {n:'Inchaço',t:'Inchaço e sensação de peso',d:'A drenagem linfática estimula a circulação linfática, reduz inchaços e promove leveza. Ideal também como momento de bem-estar.',tg:['Drenagem linfática','Leveza','Bem-estar']}];
+  const svg=document.getElementById('bsvg'),ch=document.getElementById('dchips'),card=document.getElementById('dcard'),NS='http://www.w3.org/2000/svg';const hs=[];
+  D.forEach((p,i)=>{const b=document.createElement('button');b.textContent=p.n;b.onclick=()=>set(i);ch.appendChild(b);
+    if(p.x){const g=document.createElementNS(NS,'g');g.setAttribute('class','hs');g.setAttribute('tabindex','0');g.setAttribute('role','button');g.setAttribute('aria-label',p.n);g.innerHTML='<circle class="p" cx="'+p.x+'" cy="'+p.y+'" r="7" style="animation-delay:'+(i*.3)+'s"/><circle class="c" cx="'+p.x+'" cy="'+p.y+'" r="6"/>';g.onclick=()=>set(i);g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();set(i)}};svg.appendChild(g);hs[i]=g}});
+  const bs=[...ch.children];
+  function set(i){const p=D[i];bs.forEach((b,k)=>b.classList.toggle('on',k===i));hs.forEach((g,k)=>g&&g.classList.toggle('on',k===i));
+    card.innerHTML='<div class="in"><span class="kick">'+p.n+'</span><h3>'+p.t+'</h3><p>'+p.d+'</p><div class="tg">'+p.tg.map(t=>'<span>'+t+'</span>').join('')+'</div><a class="btn o wa" style="align-self:flex-start" href="#" data-msg="Olá, Larissa! Vim pelo site. Estou com '+p.t.toLowerCase()+' e gostaria de agendar uma avaliação.">Agendar avaliação <span class="ar">→</span></a><p class="nt">Informação geral. Só a avaliação define o tratamento adequado para você.</p></div>';bindWA(card)}
+  set(2)})();
+
+// magnético
+if(fine&&!reduce)document.querySelectorAll('.btn').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();b.style.setProperty('--x',(e.clientX-r.left-r.width/2)*.12+'px');b.style.setProperty('--y',(e.clientY-r.top-r.height/2)*.22+'px')});b.addEventListener('pointerleave',()=>{b.style.setProperty('--x','0px');b.style.setProperty('--y','0px')})});
+
+// assistente virtual
+(function(){const norm=t=>t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ');
+  const lev=(a,b)=>{const m=[];for(let i=0;i<=a.length;i++){m[i]=[i];for(let j=1;j<=b.length;j++)m[i][j]=i?Math.min(m[i-1][j]+1,m[i][j-1]+1,m[i-1][j-1]+(a[i-1]===b[j-1]?0:1)):j}return m[a.length][b.length]};
+  const KB=[
+   {q:'Como agendar?',k:['agendar','agenda','marcar','consulta','avaliacao','horario disponivel','atendimento'],a:'É simples: chame a Larissa no WhatsApp, conte o que está sentindo e escolha o melhor dia. O atendimento é <b>somente com hora marcada</b>.',w:'Olá, Larissa! Gostaria de agendar uma avaliação.'},
+   {q:'Atende em casa?',k:['casa','domicilio','domiciliar','residencia','vai ate','visita','lar'],a:'Sim! O atendimento é <b>domiciliar</b>: a Larissa vai até a sua casa em <b>Garanhuns e região</b>, com mais conforto e praticidade.',w:'Olá, Larissa! Gostaria de atendimento em casa. Meu bairro é: '},
+   {q:'Quais cidades?',k:['cidade','regiao','garanhuns','bairro','atende onde','atendem em','atende em','onde','local','endereco','brejao','lajedo','caetes','sao joao','paranatama','saloa','jupi','capoeiras','canhotinho','angelim','correntes','palmeirina','iati','bom conselho','calcado','jucati','lagoa do ouro','terezinha','aguas belas'],a:'A Larissa atende em <b>Garanhuns e região</b>. Se você está em uma cidade vizinha, confirme a disponibilidade pelo WhatsApp.',w:'Olá, Larissa! Vocês atendem na minha cidade? Moro em: '},
+   {q:'Especialidades',k:['especialidade','trata','tratamento','faz o que','servico','servicos','area'],a:'As áreas de atuação são <b>traumato-ortopedia</b>, <b>neurofuncional</b> e <b>geriatria</b>, além de <b>liberação miofascial</b> e <b>drenagem linfática</b>. <a href="#especialidades">Ver especialidades →</a>'},
+   {q:'Dor nas costas',k:['costa','coluna','lombar','hernia','cervical','pescoco','ombro','joelho','dor','quadril','tornozelo','torci','entorse'],a:'A fisioterapia pode ajudar muito nesses casos, com alívio da dor, mobilidade e fortalecimento. Só a avaliação define o tratamento ideal. Use o <a href="#onde-doi">mapa do corpo</a> ou fale com a Larissa.',w:'Olá, Larissa! Estou sentindo dor e gostaria de uma avaliação. A dor é em: '},
+   {q:'AVC e Parkinson',k:['avc','derrame','parkinson','neuro','neurologic','alzheimer','esclerose','paralisia'],a:'Sim, a Larissa atua em <b>reabilitação neurofuncional</b>, buscando mais autonomia e qualidade de vida, e o melhor: em casa.',w:'Olá, Larissa! Gostaria de saber sobre reabilitação neurológica.'},
+   {q:'Idosos',k:['idoso','idosa','avo','vovo','queda','equilibrio','geriatr','terceira idade','andar'],a:'A fisioterapia geriátrica trabalha <b>prevenção de quedas</b>, força e equilíbrio para um envelhecimento ativo. Em casa, com conforto para toda a família.',w:'Olá, Larissa! Gostaria de atendimento para um idoso.'},
+   {q:'Drenagem linfática',k:['drenagem','inchaco','inchasso','incha','perna pesada','inchada','linfatic','retencao','liquido','miofascial','liberacao','massagem','tensao','relaxar'],a:'A <b>drenagem linfática</b> reduz inchaços e traz leveza. A <b>liberação miofascial</b> alivia tensões e melhora a mobilidade. Quer agendar uma sessão?',w:'Olá, Larissa! Tenho interesse em drenagem linfática / liberação miofascial.'},
+   {q:'Pós-cirurgia',k:['cirurgia','operei','operacao','pos operatorio','fratura','protese','ligamento','gesso'],a:'A reabilitação pós-operatória em casa é segura e confortável. Tenha em mãos o relatório e as orientações do médico para a avaliação.',w:'Olá, Larissa! Fiz uma cirurgia e gostaria de fisioterapia em casa.'},
+   {q:'Valores e pagamento',k:['valor','preco','quanto','custa','pagamento','pix','cartao','plano','convenio','pacote'],a:'Os valores dependem do tratamento e do número de sessões, e são informados pelo WhatsApp. O pagamento aceita <b>Pix</b>.',w:'Olá, Larissa! Gostaria de saber os valores do atendimento.'},
+   {q:'Horário',k:['horario','hora','abre','funciona','sabado','domingo','que dia'],a:'O atendimento é <b>somente com hora marcada</b>. Combine o melhor dia e horário pelo WhatsApp.',w:'Olá, Larissa! Qual horário você tem disponível?'},
+   {q:'Contato',k:['contato','telefone','whatsapp','zap','numero','email','instagram'],a:'WhatsApp <b>(87) 99963-6123</b> · E-mail <b>larissaraujosilva0@gmail.com</b>.',w:'Olá, Larissa! Vim pelo site.'}];
+  const SM=[{k:['oi','ola','bom dia','boa tarde','boa noite','opa','eae'],a:'Olá! 😊 Como posso te ajudar hoje? Você pode me perguntar sobre agendamento, atendimento em casa, especialidades ou valores.'},{k:['obrigad','valeu','brigad'],a:'Por nada! Se precisar, é só chamar. A Larissa vai adorar cuidar de você. 💛'}];
+  const msgs=document.getElementById('msgs'),qk=document.getElementById('qk'),as=document.getElementById('as'),ab=document.getElementById('ab');
+  const add=(h,c)=>{const d=document.createElement('div');d.className='m '+c;d.innerHTML=h;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;d.querySelectorAll('a[href^="#"]').forEach(a=>a.onclick=()=>{if(innerWidth<700)toggle(false)})};
+  function score(e,n){const ws=n.split(/\s+/).filter(w=>w.length>=4);let s=0;e.k.forEach(k=>{if(n.includes(k))s+=2;else if(k.length>=4&&!k.includes(' ')&&ws.some(w=>lev(w,k)<=1||(k.length>=6&&lev(w.slice(0,k.length),k)<=1)))s+=1});return s}
+  function reply(t){const n=' '+norm(t)+' ';const ex=KB.find(e=>e.q===t);if(ex)return ex;if(n.trim().length<16){const g=SM.find(e=>e.k.some(k=>n.includes(' '+k)));if(g)return g}let best=null,sc=0;KB.forEach(e=>{const s=score(e,n);if(s>sc){sc=s;best=e}});if(best)return best;const sm=SM.find(e=>e.k.some(k=>n.includes(' '+k)));return sm||null}
+  function ask(t){add(t.replace(/</g,'&lt;'),'u');const ty=document.createElement('div');ty.className='m b typing';ty.style.opacity=1;ty.innerHTML='<i></i><i></i><i></i>';msgs.appendChild(ty);msgs.scrollTop=msgs.scrollHeight;
+    setTimeout(()=>{ty.remove();const r=reply(t);if(r)add(r.a+(r.w?'<br><a href="'+wa(r.w)+'" target="_blank" rel="noopener">Continuar no WhatsApp →</a>':''),'b');
+      else add('Boa pergunta! Essa a própria Larissa responde melhor. <a href="'+wa('Olá, Larissa! Vim pelo site e tenho uma dúvida: '+t)+'" target="_blank" rel="noopener">Enviar no WhatsApp →</a>','b')},700)}
+  KB.slice(0,8).forEach(e=>{const b=document.createElement('button');b.type='button';b.textContent=e.q;b.onclick=()=>ask(e.q);qk.appendChild(b)});
+  let hi=false;function toggle(o){as.hidden=!o;ab.setAttribute('aria-expanded',o);if(o&&!hi){hi=true;add('Olá! Sou a assistente virtual da <b>Larissa Araújo, fisioterapeuta</b>. 💛 Posso te ajudar com agendamento, atendimento em casa, especialidades e valores.','b')}if(o&&fine)document.getElementById('asI').focus()}
+  ab.onclick=()=>toggle(as.hidden);document.getElementById('asX').onclick=()=>toggle(false);addEventListener('keydown',e=>{if(e.key==='Escape')toggle(false)});
+  document.getElementById('asF').onsubmit=e=>{e.preventDefault();const i=document.getElementById('asI');if(i.value.trim()){ask(i.value.trim());i.value=''}}})();
+</script>
+</body>
+</html>
